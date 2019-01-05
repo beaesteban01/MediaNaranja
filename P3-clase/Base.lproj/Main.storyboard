@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="P3_clase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xwK-LA-zmc">
+                                <rect key="frame" x="10" y="0.0" width="355" height="657"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nGU-VE-Tuf">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="219"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-AW-Pb9">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="109.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Fecha de naciemiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-3H-bd3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="109.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9Q-sC-sK5">
+                                                        <rect key="frame" x="168" y="0.0" width="187" height="109.5"/>
+                                                        <state key="normal" title="Cambiar"/>
+                                                        <connections>
+                                                            <segue destination="jmo-7h-hko" kind="presentation" identifier="Select Birthday" id="IrK-kR-jGZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de nacimiento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbo-5V-pTe">
+                                                <rect key="frame" x="0.0" y="109.5" width="355" height="109.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QhQ-fX-qZw">
+                                        <rect key="frame" x="0.0" y="219" width="355" height="219"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-NO-W3w">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="109.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Fecha de enamoramiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMH-Gh-V5o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="109.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDk-OB-mKU">
+                                                        <rect key="frame" x="194" y="0.0" width="161" height="109.5"/>
+                                                        <state key="normal" title="Cambiar"/>
+                                                        <connections>
+                                                            <segue destination="XlE-4S-iyl" kind="presentation" identifier="Select Loveday" id="dFF-ZO-6K6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de enamoramiento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0H-EO-T38">
+                                                <rect key="frame" x="0.0" y="109.5" width="355" height="109.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-yo-GDO">
+                                        <rect key="frame" x="0.0" y="438" width="355" height="219"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-6a-kfc">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="109.5"/>
+                                                <state key="normal" title="Calcular"/>
+                                                <connections>
+                                                    <action selector="calcularButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNR-kW-gPZ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeX-8N-foS">
+                                                <rect key="frame" x="0.0" y="109.5" width="355" height="109.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89615943013632315" green="1" blue="0.68303866318205397" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xwK-LA-zmc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AlE-wG-A3y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xwK-LA-zmc" secondAttribute="bottom" constant="10" id="Cd6-iv-MhM"/>
+                            <constraint firstItem="xwK-LA-zmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Jij-gz-yRA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xwK-LA-zmc" secondAttribute="trailing" constant="10" id="LbA-hR-M6w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="Bbo-5V-pTe" id="7X7-Tk-Gv5"/>
+                        <outlet property="lovedayLabel" destination="J0H-EO-T38" id="4bO-iT-3gL"/>
+                        <outlet property="resultLabel" destination="jeX-8N-foS" id="fB2-z9-Z3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="129.08545727136433"/>
+        </scene>
+        <!--Birthday View Controller-->
+        <scene sceneID="mtq-a3-8eQ">
+            <objects>
+                <viewController id="jmo-7h-hko" customClass="BirthdayViewController" customModule="P3_clase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Qe-bz-wKW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-fr-8qC">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu fecha de nacimiento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4p-e1-rYz">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="SBM-Og-NPQ">
+                                        <rect key="frame" x="0.0" y="48" width="355" height="508.5"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n5m-Xn-9Ho">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="508.5"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="562585814.74377704">
+                                                    <!--2018-10-30 09:50:14 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Ih-1rc">
+                                        <rect key="frame" x="0.0" y="556.5" width="355" height="70.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71y-bM-n7q">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="70.5"/>
+                                                <state key="normal" title="Ok"/>
+                                                <connections>
+                                                    <segue destination="v6x-9Z-xsZ" kind="unwind" identifier="sb ok" unwindAction="firstPage:" id="D2u-e4-Iuf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITt-XM-Rwx">
+                                                <rect key="frame" x="177.5" y="0.0" width="177.5" height="70.5"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <segue destination="v6x-9Z-xsZ" kind="unwind" identifier="sb cancel" unwindAction="firstPage:" id="61G-6R-TFf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89615943009999999" green="1" blue="0.68303866319999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1iL-fr-8qC" firstAttribute="leading" secondItem="7F9-sp-uC9" secondAttribute="leading" constant="10" id="BNV-XF-A9a"/>
+                            <constraint firstAttribute="trailing" secondItem="1iL-fr-8qC" secondAttribute="trailing" constant="10" id="a4n-u6-eAW"/>
+                            <constraint firstItem="1iL-fr-8qC" firstAttribute="top" secondItem="7F9-sp-uC9" secondAttribute="top" constant="10" id="ydx-ez-E57"/>
+                            <constraint firstItem="7F9-sp-uC9" firstAttribute="bottom" secondItem="1iL-fr-8qC" secondAttribute="bottom" constant="10" id="ykt-0D-aRa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7F9-sp-uC9"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayPicker" destination="n5m-Xn-9Ho" id="agD-yB-zYp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuf-7C-Xu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="v6x-9Z-xsZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1016.8" y="-106.59670164917542"/>
+        </scene>
+        <!--Loveday View Controller-->
+        <scene sceneID="dfp-2B-CGT">
+            <objects>
+                <viewController id="XlE-4S-iyl" customClass="LovedayViewController" customModule="P3_clase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IjK-ct-Jj3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ckT-h1-KgB">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu fecha de enamoramiento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ere-sQ-iTZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="ISc-jx-ivo">
+                                        <rect key="frame" x="0.0" y="48" width="355" height="508.5"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Q3-Kg-ydE">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="508.5"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="562585814.74377704">
+                                                    <!--2018-10-30 09:50:14 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lY3-Gc-1yX">
+                                        <rect key="frame" x="0.0" y="556.5" width="355" height="70.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l55-rI-j7S">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="70.5"/>
+                                                <state key="normal" title="Ok"/>
+                                                <connections>
+                                                    <segue destination="DDm-LI-MM1" kind="unwind" identifier="ld ok" unwindAction="firstPage:" id="1In-b0-ndn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc3-cQ-Ver">
+                                                <rect key="frame" x="177.5" y="0.0" width="177.5" height="70.5"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <segue destination="DDm-LI-MM1" kind="unwind" identifier="ld cancel" unwindAction="firstPage:" id="KoA-CP-Yoq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89615943009999999" green="1" blue="0.68303866319999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ckT-h1-KgB" firstAttribute="leading" secondItem="tkL-Fg-fCp" secondAttribute="leading" constant="10" id="D3v-MF-H6m"/>
+                            <constraint firstItem="tkL-Fg-fCp" firstAttribute="trailing" secondItem="ckT-h1-KgB" secondAttribute="trailing" constant="10" id="Yg2-C4-JUh"/>
+                            <constraint firstItem="ckT-h1-KgB" firstAttribute="top" secondItem="tkL-Fg-fCp" secondAttribute="top" constant="10" id="hdU-qL-due"/>
+                            <constraint firstItem="tkL-Fg-fCp" firstAttribute="bottom" secondItem="ckT-h1-KgB" secondAttribute="bottom" constant="10" id="zSc-dU-HFy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tkL-Fg-fCp"/>
+                    </view>
+                    <connections>
+                        <outlet property="lovedayPicker" destination="1Q3-Kg-ydE" id="Lh3-9J-L88"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5f-F4-deK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DDm-LI-MM1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1016.8" y="557.27136431784118"/>
+        </scene>
+    </scenes>
+</document>
